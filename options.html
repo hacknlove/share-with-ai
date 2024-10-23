@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="pico.conditional.cyan.min.css" />
+    <link rel="stylesheet" href="options.css" />
+    <title>Share with AI: CONFIG</title>
+    <script type="module" src="autosizeTextArea.js"></script>
+    <script type="module" src="options.apikey.js"></script>
+    <script type="module" src="options.styles.js"></script>
+  </head>
+  <body class="pico">
+    <header>
+      <h1>Share with AI: CONFIG</h1>
+    </header>
+
+    <main class="container">
+
+      <form id="apiKeyForm" method="dialog">
+        <h2>OPENAI API KEY</h1>
+        <label for="apiKeyInput">Ingresa tu API Key:</label>
+        <input type="text" id="apiKeyInput" placeholder="Tu API Key" />
+        <input type="submit" value="Save" />
+      </form>
+  
+      <form id="stylesForm" method="dialog">
+        <h2 for="stylesTextArea">Text Generation Styles</h2>
+        <p>Example</p>
+        <p class="textarea">
+Asking_info:
+Interesting and engaging questions about the photo. Trying to generate a conversation.
+
+Enthusiast:
+The author of the post shares his enthusiasm about this. What he likes it more about it. Trying to make his audience to fall in love with it.
+
+Autopromo:
+The author of the post is inviting people to follow the link that the photo promotes
+        </p>
+        <div class="textArea-wrapper">
+          <div class="textArea-copy">
+    
+          </div>
+          <textarea id="stylesTextArea" class="autosize" placeholder="Write here your styles"></textarea>
+        </div>
+        <input type="submit" value="Save" />
+      </form>
+    </main>
+
+    <footer class="container">
+      share with AI
+    </footer>
+  </body>
+</html>
